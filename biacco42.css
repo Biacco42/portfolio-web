@@ -1,0 +1,391 @@
+@charset "UTF-8";
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #707070;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+
+header {
+    position: relative;
+    height: 56.2vw;
+    background: url(images/header_bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header .youtube-header {
+    position: relative;
+    overflow: hidden;
+    top: -21.87vw;
+    width: 100%;
+    height: 78.12vw;
+}
+
+header iframe {
+    position: absolute;
+    min-width: 100vw;
+    min-height: 100vw;
+}
+
+header .header-cover {
+    position: absolute;
+    background-color: #000000aa;
+    width: 100vw;
+    height: 78.2vw;
+}
+
+header .header-text {
+    position: absolute;
+    text-align: center;
+    line-height: 2.5em;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translate(0, 8vw);
+    color: white;
+    font-weight: 700;
+}
+
+header .header-text p {
+    font-size: 1.5em;
+}
+
+header .header-text h1 {
+    font-size: 2.2em;
+}
+
+@media (max-width: 768px) {
+    header .header-text {
+        line-height: 2.5em;
+        transform: translate(0, 0);
+    }
+    header .header-text p {
+        font-size: 1.2em;
+    }
+    header .header-text h1 {
+        font-size: 1.5em;
+    }
+    header iframe {
+        visibility: hidden;
+    }
+}
+
+footer .logo-link {
+    padding: 7%;
+    text-align: center;
+}
+
+footer img {
+    width: 30%;
+}
+
+footer p {
+    margin-top: 2em;
+}
+
+@media (max-width: 768px) {
+    footer img {
+        width: 50%;
+    }
+}
+
+/* section */
+
+section {
+    width: 100%;
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
+}
+
+/* section - image */
+
+section .section-with-image {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 7%;
+}
+
+section .section-with-image .image {
+    flex: 1 1 280px;
+    padding: 0.5px;
+}
+
+section .section-with-image .image img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+section .section-with-image .description {
+    flex: 1 1 320px;
+    padding: 3% 5% 3% 5%;
+}
+
+section .section-with-image .description h1 {
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 1.4em;
+    margin-bottom: 1em;
+}
+
+section .section-with-image .description p {
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+section .section-with-image-right {
+    flex-direction: row-reverse;
+}
+
+/* section - youtube */
+
+section .section-with-youtube {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 7% 7% 7%;
+}
+
+section .section-with-youtube .youtube-with-title {
+    flex: 1 1 43%;
+    min-width: 320px;
+    padding: 2%;
+}
+
+section .section-with-youtube .youtube-with-title .youtube-wrapper {
+    height: 21vw;
+}
+
+@media (max-width: 840px) {
+    section .section-with-youtube .youtube-with-title .youtube-wrapper {
+        height: 42vw;
+    }
+}
+
+section .section-with-youtube .youtube-with-title iframe {
+    width: 100%;
+    height: 100%;
+}
+
+section .section-with-youtube .youtube-with-title h2 {
+    font-size: 1.4em;
+    line-height: 1.6em;
+    color: #1EA4D9;
+    margin: 1em 0 0.5em 0;
+}
+
+section .section-with-youtube .youtube-with-title p {
+    margin-bottom: 1em;
+}
+
+/* section - links */
+
+section .image-links {
+    padding: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section .image-links .image {
+    flex: 0 1 120px;
+}
+
+section .image-links .image img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+/* section - booth */
+
+section .booth-contents {
+    margin: 7%;
+    text-align: center;
+}
+
+section .booth-contents h1 {
+    font-size: 2em;
+    line-height: 1.2em;
+    margin: 1em;
+}
+
+@media (max-width: 768px) {
+    section .booth-contents h1 {
+        font-size: 1.5em;
+    }
+}
+
+section .booth-contents .product-photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5%;
+}
+
+section .booth-contents .product-photo .image {
+    flex: 0 1 280px;
+    padding: 0.5em;
+}
+
+section .booth-contents .product-photo .image img {
+    width: 100%;
+}
+
+/* section utils */
+
+section .no-padding-top {
+    padding-top: 0;
+}
+
+section .no-padding-bottom {
+    padding-bottom: 0;
+}
+
+section .no-margin-top {
+    margin-top: 0;
+}
+
+section .no-margin-bottom {
+    margin-bottom: 0;
+}
+
+section .border-lined {
+    border: 5px solid white;
+}
+
+section .border-booth {
+    border: 5px solid #FC4D50;
+}
+
+/* util */
+
+.centering {
+    text-align: center;
+}
+
+.margin-2em {
+    margin: 2em;
+}
+
+.margin-bottom-1_5em {
+    margin-bottom: 1.5em;
+}
+
+.button {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 3em;
+    height: 3em;
+    background-color: #F26E22;
+    color: white;
+    text-align: center;
+}
+
+.booth-button {
+    background-color: #FC4D50;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* introduction */
+
+.introduction .description h1 {
+    color: #1EA4D9;
+}
+
+/* social */
+
+.social {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: row;
+}
+
+.social iframe {
+    padding-right: 0.9em;
+}
+
+/* member */
+
+.member {
+    background-color: #047BC4;
+    text-align: center;
+    color: white;
+}
+
+.member h1 {
+    margin: 5% 0 2% 0;
+    font-size: 2em;
+}
+
+.member>p {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.member .section-with-image .image {
+    flex: 1 0 240px;
+    padding: 3%;
+}
+
+.member .section-with-image .description {
+    flex: 3 1 320px;
+    text-align: left;
+}
+
+.member .section-with-image .description h1 {
+    font-size: 2.5em;
+}
+
+/* pickup */
+
+.pickup {
+    text-align: center;
+}
+
+.pickup .header {
+    padding: 7% 7% 0 7%;
+    margin-bottom: 3%;
+}
+
+.pickup h1 {
+    color: #1EA4D9;
+    font-size: 2.2em;
+    margin-bottom: 1em;
+}
+
+/* links */
+
+.links {
+    background-color: #047BC4;
+    text-align: center;
+    color: white;
+}
+
+.links h1 {
+    margin: 5% 0 2% 0;
+    font-size: 2em;
+}
+
+.links p {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.booth {
+    background-color: #F1F5F8;
+    color: #252F3D;
+}
